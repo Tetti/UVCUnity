@@ -106,7 +106,7 @@ namespace Tetti.UVCUnity.Runtime
                     unityWebCamName = device.name,
                     canUseUnityWebCamTexture = true,
                     capabilities = DefaultCapabilities(),
-                    isBuiltIn = !device.isFrontFacing,
+                    isBuiltIn = true,
                     isUsb = false,
                     requiresNativePlugin = false,
                 })

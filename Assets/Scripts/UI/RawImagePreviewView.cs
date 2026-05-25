@@ -24,7 +24,7 @@ namespace Tetti.UVCUnity.UI
             EnsurePlaceholderTexture();
             rawImage.texture = placeholderTexture;
             rawImage.color = Color.white;
-            name = $"RawImagePreviewView ({label})";
+            Debug.Log($"[UVCUnity] Showing placeholder preview for {label}.");
         }
 
         public void Clear()
