@@ -1,0 +1,22 @@
+apply plugin: 'com.android.library'
+
+android {
+    namespace 'com.tetti.uvcunity'
+    compileSdkVersion **APIVERSION**
+
+    defaultConfig {
+        minSdkVersion 24
+        targetSdkVersion **TARGETSDKVERSION**
+        consumerProguardFiles 'proguard-rules.pro'
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar', '*.aar'])
+    // Add explicit UVC dependencies here when you drop in vendor AARs, for example:
+    // implementation(name: 'uvccamera-release', ext: 'aar')
+}
