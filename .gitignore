@@ -24,3 +24,7 @@ Assets/AssetStoreTools*
 *.VC.db
 .DS_Store
 Thumbs.db
+*.meta
+/.vs
+.vsconfig
+/ProjectSettings

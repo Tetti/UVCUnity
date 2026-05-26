@@ -111,7 +111,7 @@ namespace Tetti.UVCUnity.Editor
 
         private static void CreateEventSystem()
         {
-            if (Object.FindObjectOfType<EventSystem>() != null)
+            if (Object.FindFirstObjectByType<EventSystem>() != null)
             {
                 return;
             }
@@ -224,7 +224,7 @@ namespace Tetti.UVCUnity.Editor
         {
             var textTransform = CreateRectTransform(name, parent, Vector2.zero, Vector2.one, Vector2.zero, Vector2.zero);
             var text = textTransform.gameObject.AddComponent<Text>();
-            text.font = Resources.GetBuiltinResource<Font>("Arial.ttf");
+            text.font = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
             text.fontSize = fontSize;
             text.fontStyle = fontStyle;
             text.text = value;
